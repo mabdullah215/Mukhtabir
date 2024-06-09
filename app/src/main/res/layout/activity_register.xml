@@ -65,6 +65,7 @@
                     android:layout_width="match_parent"
                     android:background="@color/white"
                     android:padding="12dp"
+                    android:id="@+id/et_fullname"
                     android:fontFamily="@font/almarai_regular"
                     android:hint="اسمك"
                     android:textSize="14sp"
@@ -91,6 +92,7 @@
                     android:layout_width="match_parent"
                     android:background="@color/white"
                     android:padding="12dp"
+                    android:id="@+id/et_email"
                     android:fontFamily="@font/almarai_regular"
                     android:textSize="14sp"
                     android:gravity="end"
@@ -121,6 +123,7 @@
                     android:fontFamily="@font/almarai_regular"
                     android:textSize="14sp"
                     android:gravity="end"
+                    android:id="@+id/et_phone"
                     android:hint="E-x +9664552322"
                     android:layout_height="wrap_content"/>
 
@@ -147,6 +150,7 @@
                     android:padding="12dp"
                     android:fontFamily="@font/almarai_regular"
                     android:textSize="14sp"
+                    android:id="@+id/et_password"
                     android:hint="أدخل كلمة مرور فريدة"
                     android:layout_height="wrap_content"/>
 
@@ -174,6 +178,7 @@
                     android:padding="12dp"
                     android:fontFamily="@font/almarai_regular"
                     android:textSize="14sp"
+                    android:id="@+id/et_confirm_pass"
                     android:hint="تأكيد كلمة المرور"
                     android:layout_height="wrap_content"/>
 

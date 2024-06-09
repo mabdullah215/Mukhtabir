@@ -63,6 +63,7 @@
                 android:layout_width="match_parent"
                 android:background="@color/white"
                 android:padding="12dp"
+                android:id="@+id/et_email"
                 android:fontFamily="@font/almarai_regular"
                 android:hint="البريد الإلكتروني"
                 android:textSize="16sp"
@@ -91,6 +92,7 @@
                 android:layout_width="match_parent"
                 android:background="@color/white"
                 android:padding="12dp"
+                android:id="@+id/et_password"
                 android:fontFamily="@font/almarai_regular"
                 android:textSize="16sp"
                 android:hint="كلمة المرور"
@@ -118,6 +120,7 @@
             android:layout_marginTop="24dp"
             android:insetBottom="0dp"
             android:insetTop="0dp"
+            android:id="@+id/button_login"
             android:backgroundTint="@color/colorAccent"
             android:layout_height="wrap_content"/>
 
