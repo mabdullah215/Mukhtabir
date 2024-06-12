@@ -10,7 +10,7 @@
         app:showAsAction="always" />
 
     <item
-        android:id="@+id/navigation_saved"
+        android:id="@+id/navigation_favorite"
         android:orderInCategory="100"
         android:title="المحفوظة"
         android:icon="@drawable/ic_saved"

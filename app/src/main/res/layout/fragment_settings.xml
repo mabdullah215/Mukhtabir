@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="16dp"
+            android:text="Account Settings"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_person"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="38dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Edit Profile"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nunito_medium"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/nunito_regular"
+                        android:textColor="#515151"
+                        android:text="Name, email, phone number, and more"
+                        android:layout_below="@+id/label_edit_profile"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_path"
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_wallet"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="38dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Wallet"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nunito_medium"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/nunito_regular"
+                        android:textColor="#515151"
+                        android:text="Track your transaction"
+                        android:layout_below="@+id/label_edit_profile"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_path"
+                    android:layout_marginRight="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="16dp"
+            android:text="Preference"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Language"
+                android:padding="8dp"
+                android:drawablePadding="16dp"
+                android:textSize="14sp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_path"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_medium"
+                android:drawableLeft="@drawable/ic_language"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_notification_settings"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="38dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Notification"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nunito_medium"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/nunito_regular"
+                        android:textColor="#515151"
+                        android:text="Get updated about subjects"
+                        android:layout_below="@+id/label_edit_profile"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="true"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="16dp"
+            android:text="Support"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Contact"
+                android:padding="8dp"
+                android:drawablePadding="16dp"
+                android:textSize="14sp"
+                android:layout_marginRight="8dp"
+                android:drawableRight="@drawable/ic_path"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_medium"
+                android:drawableLeft="@drawable/ic_contact"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="About"
+                android:padding="8dp"
+                android:drawablePadding="16dp"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:drawableRight="@drawable/ic_path"
+                android:textColor="@color/black"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/nunito_medium"
+                android:drawableLeft="@drawable/ic_help"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="16dp"
+            android:text="Legal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Terms and Conditions"
+                android:padding="8dp"
+                android:drawablePadding="16dp"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:drawableRight="@drawable/ic_path"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_medium"
+                android:drawableLeft="@drawable/ic_terms"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Logout"
+            android:padding="16dp"
+            android:drawablePadding="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito_medium"
+            android:drawableLeft="@drawable/ic_logout"
+            android:layout_marginBottom="32dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

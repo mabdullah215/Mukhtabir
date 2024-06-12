@@ -48,7 +48,7 @@ public class SubjectListAdapter extends RecyclerView.Adapter<SubjectListAdapter.
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.item_offer, parent, false);
+        View view = layoutInflater.inflate(R.layout.item_subject, parent, false);
         return new ViewHolder(view);
     }
     @Override
@@ -90,8 +90,6 @@ public class SubjectListAdapter extends RecyclerView.Adapter<SubjectListAdapter.
             super(itemView);
             mImage=itemView.findViewById(R.id.img_source);
             mTitle=itemView.findViewById(R.id.tv_title);
-            mValidity=itemView.findViewById(R.id.tv_valid);
-            mDesc=itemView.findViewById(R.id.tv_details);
             itemView.setOnClickListener(this);
         }
 
