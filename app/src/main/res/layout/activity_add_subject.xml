@@ -9,33 +9,312 @@
 
     <include layout="@layout/toolbar_layout_centre"/>
 
-    <LinearLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp"
         android:layout_below="@+id/toolbar_layout"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:fontFamily="@font/nunito_bold"
-            android:text="Add subject to your learnings"
-            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_below="@+id/toolbar_layout"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/add_sub"
+                android:layout_height="220dp"/>
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_marginTop="16dp"
-            android:textSize="14sp"
-            android:textColor="@color/black"
-            android:text="University/School"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Subject name"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#989898"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="14sp"
+                android:hint="Name of subject"
+                android:background="@drawable/square_corner_grey"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Subject price"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#989898"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="14sp"
+                android:hint="Price of subject"
+                android:drawableRight="@drawable/ic_arrow_down"
+                android:background="@drawable/square_corner_grey"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito_medium"
+                android:text="School/University"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#989898"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="14sp"
+                android:drawableRight="@drawable/ic_arrow_down"
+                android:hint="Schoole/University name"
+                android:background="@drawable/square_corner_grey"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Specialization"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#989898"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="14sp"
+                android:drawableRight="@drawable/ic_arrow_down"
+                android:hint="Specialization"
+                android:background="@drawable/square_corner_grey"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Grade"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#989898"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="14sp"
+                android:drawableRight="@drawable/ic_arrow_down"
+                android:hint="Grade"
+                android:background="@drawable/square_corner_grey"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Semester"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/semster_list"
+                android:layout_height="wrap_content"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/square_corner_grey"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginRight="72dp"
+                    android:layout_marginBottom="32dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_min"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="42dp"
+                            android:text="4"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Chapter"
+                            android:layout_gravity="center"
+                            android:textColor="#727272"
+                            android:textSize="16sp"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_max"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/square_corner_grey"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginRight="72dp"
+                    android:layout_marginBottom="32dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_min"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="42dp"
+                            android:text="10"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Academic Years"
+                            android:layout_gravity="center"
+                            android:textColor="#727272"
+                            android:textSize="16sp"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_max"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
 
 
 
 
-    </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/nunito_medium"
+                android:text="Subject Intro"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="#989898"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="14sp"
+                android:hint="Subject intro"
+                android:gravity="start"
+                android:background="@drawable/square_corner_grey"
+                android:backgroundTint="@color/white"
+                android:layout_height="140dp"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                android:insetBottom="0dp"
+                android:insetTop="0dp"
+                app:cornerRadius="8dp"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/nunito_semibold"
+                android:stateListAnimator="@null"
+                android:textColor="@color/white"
+                android:text="Add Subject"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
 
 </RelativeLayout>

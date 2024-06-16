@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSubject">
+
+    <include layout="@layout/toolbar_layout_centre"/>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/toolbar_layout"
+                android:id="@+id/img_subject"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img_default_subject"
+                android:layout_height="220dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_below="@+id/toolbar_layout"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Subject name"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textColor="#1f1f1f"
+                    android:text="Chemical Sciences and Laboratory"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#f0f0f0"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Subject Status"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content"/>
+
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    app:chipCornerRadius="4dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textColor="#EC7F00"
+                    android:text="Under Review"
+                    app:chipBackgroundColor="#FDF4ED"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#f0f0f0"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Chapters"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textColor="#1f1f1f"
+                    android:text="4"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#f0f0f0"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Academic Years"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textColor="#1f1f1f"
+                    android:text="10"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#f0f0f0"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Price"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textColor="#1f1f1f"
+                    android:text="$100"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#f0f0f0"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="University"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textColor="#1f1f1f"
+                    android:text="Damascus University"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#f0f0f0"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Specialization"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textColor="#1f1f1f"
+                    android:text="Computer Science"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#f0f0f0"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Grade"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textColor="#1f1f1f"
+                    android:text="3rd"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#f0f0f0"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Semester"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textColor="#1f1f1f"
+                    android:text="Ist"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#f0f0f0"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Subject intro"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textColor="#1f1f1f"
+                    android:text="Chemistry is the study of matter, its properties, composition, and interactions. From the smallest atoms to complex chemical reactions, chemistry plays a crucial role in understanding the world around us. Explore the fascinating realms of elements, compounds, and chemical reactions as you delve into the mysteries of atoms and molecules. Whether you're intrigued by the periodic table, curious about chemical bonds, or fascinated by the wonders of organic chemistry, our platform provides a wealth of resources to help you unravel the secrets of chemistry and master this captivating subject. Join us on this journey of discovery and uncover the magic of chemistry!"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:insetBottom="0dp"
+                    android:insetTop="0dp"
+                    app:cornerRadius="8dp"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:stateListAnimator="@null"
+                    android:textColor="@color/white"
+                    android:text="Add MCQs"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

@@ -13,20 +13,22 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
-public class AddSubject extends AppCompatActivity {
+public class EditProfile extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_subject);
-        TextView tvTitle=findViewById(R.id.tv_title);
-        tvTitle.setText("Add Subject");
+        setContentView(R.layout.activity_edit_profile);
         ImageView imgBack=findViewById(R.id.img_back);
+        TextView tvTitle=findViewById(R.id.tv_title);
+        tvTitle.setText("Edit Profile");
         imgBack.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 finish();
-                Animatoo.INSTANCE.animateSlideRight(AddSubject.this);
+                Animatoo.INSTANCE.animateSlideRight(EditProfile.this);
             }
         });
 

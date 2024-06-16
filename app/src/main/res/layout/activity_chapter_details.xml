@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChapterDetails">
+
+    <include layout="@layout/toolbar_layout_centre_icons"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar_layout"
+        android:padding="8dp"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_mcq"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        app:cornerRadius="8dp"
+        android:stateListAnimator="@null"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/nunito_semibold"
+        android:textColor="@color/white"
+        android:text="Add MCQ"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
